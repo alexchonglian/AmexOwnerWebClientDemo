@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Manager View</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/cufon-replace.js"></script>
+<script type="text/javascript" src="js/Myriad_Pro_300.font.js"></script>
+<script type="text/javascript" src="js/Myriad_Pro_400.font.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<!--[if lt IE 7]>
+<link rel="stylesheet" href="css/ie6.css" type="text/css" media="screen">
+<script type="text/javascript" src="js/ie_png.js"></script>
+<script type="text/javascript">ie_png.fix('.png, footer, header nav ul li a, .nav-bg, .list li img');</script>
+<![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="js/html5.js"></script><![endif]-->
+</head>
+<body id="page2">
+<!-- START PAGE SOURCE -->
+<div class="wrap">
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="index.html" class="m1">Home</a></li>
+          <li class="current"><a href="roles.html" class="m2">Roles</a></li>
+          <li><a href="menus.html" class="m3">Menus</a></li>
+          <li><a href="reports.html" class="m4">Reports</a></li>
+          <li class="last"><a href="settings.html" class="m5">Settings</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <aside>
+      <h3>Roles   <a id="new_ctrl" href="#">(+)</a></h3>
+      <ul class="categories">
+        <li id="manager_ctrl" ><span><a href="#">Manager</a></span></li>
+        <li id="waiter_ctrl" ><span><a href="#">Waiter</a></span></li>
+        <li id="server_ctrl" ><span><a href="#">Server</a></span></li>
+        <li id="chef_ctrl" ><span><a href="#">Chef</a></span></li>
+        <li id="bartender_ctrl" ><span><a href="#">Bartender</a></span></li>
+        <li id="delivery_ctrl" ><span><a href="#">Delivery</a></span></li>
+        <li id="new_ctrl2" class="last"><span><a href="#">+ Create New Role +</a></span></li>
+      </ul>
+
+      <h3>Updates</h3>
+      <ul class="news">
+        <li><strong>Mar 10, 2014, 12:58</strong>
+          <h4><a href="#">Smith</a> checked for <a href=""> Table10 </a></h4>
+        </li>
+
+        <li><strong>Mar 10, 2014, 12:48</strong>
+          <h4><a href="#">Johnson</a> clocked-out</h4>
+        </li>
+
+        <li><strong>Mar 10, 2014, 12:44</strong>
+          <h4><a href="#">Williams</a> clocked-out</h4>
+        </li>
+
+        <li><strong>Mar 10, 2014, 12:28</strong>
+          <h4><a href="#">Jones</a> ordered-for <a href=""> Table10 </a></h4>
+        </li>
+
+        <li><strong>Mar 10, 2014, 12:24</strong>
+          <h4><a href="#">Brown</a> ordered-for <a href=""> Table5 </a></h4>
+        </li>
+
+        <li><strong>Mar 10, 2014, 12:24</strong>
+          <h4><a href="#">Davis</a> ordered-for <a href=""> Table8 </a></h4>
+        </li>
+
+        <li><strong>Mar 10, 2014, 12:24</strong>
+          <h4><a href="#">Miller</a> ordered-for <a href=""> Table32 </a></h4>
+        </li>
+
+      </ul>
+    </aside>
+    <section id="content">
+
+      <div id="role">
+        <!--
+        <div style="background-color: rgba(150, 150, 150, 0.5); overflow: hidden; position: fixed; left: 0px; top: 0px; bottom: 0px; right: 0px; z-index: 1000; display:block;">
+          <div style="background-color: rgb(255, 255, 255); width: 600px; position: static; margin: 20px auto; padding: 20px 30px 0px; top: 110px; overflow: hidden; z-index: 1001; box-shadow: 0px 3px 8px rgba(34, 25, 25, 0.4);">
+            <iframe src="roles/manager.html" width="400px"></iframe>
+          </div>
+        </div>
+
+
+         <iframe src="roles/manager.html" name="targetframe" width="600" allowTransparency="true" scrolling="yes" frameborder="0" ></iframe>
+        -->
+        <div id="manager" class="roles">
+        <h2>Manager <a href="#"><input type="button" value="edit"></h2>
+        <br>
+        </a> <input align="right" type="text" value="search">
+        <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Activity</th>
+                  <th>Last Clockin</th>
+                  <th>State</th>
+                  <th>PIN</th>
+                  <th>What Else?</th>
+                </tr>
+                <tr>
+                  <td><a href="#">Allen B.</a></td>
+                  <td><a href="#">clockIn</a></td> 
+                  <td><a href="#">Mar.10th 2014 09:51</a></td>
+                  <td><a href="#">Active</a></td>
+                  <td><a href="#">5324</a></td>
+                  <td><a href="#"><input type="button" value="edit"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Collins D.</a></td>
+                  <td><a href="#">clockIn</a></td> 
+                  <td><a href="#">Mar.10th 2014 09:51</a></td>
+                  <td><a href="#">Active</a></td>
+                  <td><a href="#">8023</a></td>
+                  <td><a href="#"><input type="button" value="edit"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Evan F.</a></td>
+                  <td><a href="#">clockOut</a></td> 
+                  <td><a href="#">Mar.10th 2014 09:51</a></td>
+                  <td><a href="#">Leave</a></td>
+                  <td><a href="#">3804</a></td>
+                  <td><a href="#"><input type="button" value="edit"></a></td>
+                </tr>
+        </table>
+        </div>
+
+
+
+
+
+        <div id="waiter" class="roles">
+        <h2>Waiter <a href="#"><input type="button" value="edit"></h2>
+        <br>
+        </a> <input align="right" type="text" value="search">
+        <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Activity</th>
+                  <th>Last Clockin</th>
+                  <th>State</th>
+                  <th>PIN</th>
+                  <th>What Else?</th>
+                </tr>
+                <tr>
+                  <td><a href="#">Gonzalez B.</a></td>
+                  <td><a href="#">clockIn</a></td> 
+                  <td><a href="#">Mar.10th 2014 09:51</a></td>
+                  <td><a href="#">Active</a></td>
+                  <td><a href="#">5324</a></td>
+                  <td><a href="#"><input type="button" value="edit"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Harris R.</a></td>
+                  <td><a href="#">clockIn</a></td> 
+                  <td><a href="#">Mar.10th 2014 09:51</a></td>
+                  <td><a href="#">Active</a></td>
+                  <td><a href="#">8023</a></td>
+                  <td><a href="#"><input type="button" value="edit"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Jackson F.</a></td>
+                  <td><a href="#">clockOut</a></td> 
+                  <td><a href="#">Mar.10th 2014 09:51</a></td>
+                  <td><a href="#">Leave</a></td>
+                  <td><a href="#">3804</a></td>
+                  <td><a href="#"><input type="button" value="edit"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Lewis W.</a></td>
+                  <td><a href="#">clockIn</a></td> 
+                  <td><a href="#">Mar.10th 2014 09:51</a></td>
+                  <td><a href="#">Active</a></td>
+                  <td><a href="#">5324</a></td>
+                  <td><a href="#"><input type="button" value="edit"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Thompson R.</a></td>
+                  <td><a href="#">clockIn</a></td> 
+                  <td><a href="#">Mar.10th 2014 09:51</a></td>
+                  <td><a href="#">Active</a></td>
+                  <td><a href="#">8023</a></td>
+                  <td><a href="#"><input type="button" value="edit"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Carter M.</a></td>
+                  <td><a href="#">clockOut</a></td> 
+                  <td><a href="#">Mar.10th 2014 09:51</a></td>
+                  <td><a href="#">Leave</a></td>
+                  <td><a href="#">3804</a></td>
+                  <td><a href="#"><input type="button" value="edit"></a></td>
+                </tr>
+        </table>
+        </div>
+
+
+        <div id="server" class="roles">
+        <h2>Server <a href="#"><input type="button" value="edit"></h2>
+        <br>
+        </a> <input align="right" type="text" value="search">
+        <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Activity</th>
+                  <th>Last Clockin</th>
+                  <th>State</th>
+                  <th>PIN</th>
+                  <th>What Else?</th>
+                </tr>
+                <tr>
+                  <td><a href="#">Clark J.</a></td>
+                  <td><a href="#">clockIn</a></td> 
+                  <td><a href="#">Mar.10th 2014 09:51</a></td>
+                  <td><a href="#">Active</a></td>
+                  <td><a href="#">5324</a></td>
+                  <td><a href="#"><input type="button" value="edit"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Nelson S.</a></td>
+                  <td><a href="#">clockIn</a></td> 
+                  <td><a href="#">Mar.10th 2014 09:51</a></td>
+                  <td><a href="#">Active</a></td>
+                  <td><a href="#">8023</a></td>
+                  <td><a href="#"><input type="button" value="edit"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Scott W.</a></td>
+                  <td><a href="#">clockOut</a></td> 
+                  <td><a href="#">Mar.10th 2014 09:51</a></td>
+                  <td><a href="#">Leave</a></td>
+                  <td><a href="#">3804</a></td>
+                  <td><a href="#"><input type="button" value="edit"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Daniel L.</a></td>
+                  <td><a href="#">clockIn</a></td> 
+                  <td><a href="#">Mar.10th 2014 09:51</a></td>
+                  <td><a href="#">Active</a></td>
+                  <td><a href="#">5324</a></td>
+                  <td><a href="#"><input type="button" value="edit"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Robert P.</a></td>
+                  <td><a href="#">clockOut</a></td> 
+                  <td><a href="#">Mar.10th 2014 09:51</a></td>
+                  <td><a href="#">Leave</a></td>
+                  <td><a href="#">3804</a></td>
+                  <td><a href="#"><input type="button" value="edit"></a></td>
+                </tr>
+        </table>
+        </div>
+
+        <div id="chef" class="roles">
+        <h2>Chef <a href="#"><input type="button" value="edit"></h2>
+        <br>
+        </a> <input align="right" type="text" value="search">
+        <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Activity</th>
+                  <th>Last Clockin</th>
+                  <th>State</th>
+                  <th>PIN</th>
+                  <th>What Else?</th>
+                </tr>
+                <tr>
+                  <td><a href="#">Brian B.</a></td>
+                  <td><a href="#">clockIn</a></td> 
+                  <td><a href="#">Mar.10th 2014 09:51</a></td>
+                  <td><a href="#">Active</a></td>
+                  <td><a href="#">5324</a></td>
+                  <td><a href="#"><input type="button" value="edit"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Anthony D.</a></td>
+                  <td><a href="#">clockIn</a></td> 
+                  <td><a href="#">Mar.10th 2014 09:51</a></td>
+                  <td><a href="#">Active</a></td>
+                  <td><a href="#">8023</a></td>
+                  <td><a href="#"><input type="button" value="edit"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Christopher F.</a></td>
+                  <td><a href="#">clockOut</a></td> 
+                  <td><a href="#">Mar.10th 2014 09:51</a></td>
+                  <td><a href="#">Leave</a></td>
+                  <td><a href="#">3804</a></td>
+                  <td><a href="#"><input type="button" value="edit"></a></td>
+                </tr>
+        </table>
+        </div>
+
+        <div id="chef" class="roles">
+        <h2>Chef <a href="#"><input type="button" value="edit"></h2>
+        <br>
+        </a> <input align="right" type="text" value="search">
+
+        <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Activity</th>
+                  <th>Last Clockin</th>
+                  <th>State</th>
+                  <th>PIN</th>
+                  <th>What Else?</th>
+                </tr>
+                <tr>
+                  <td><a href="#">Brian B.</a></td>
+                  <td><a href="#">clockIn</a></td> 
+                  <td><a href="#">Mar.10th 2014 09:51</a></td>
+                  <td><a href="#">Active</a></td>
+                  <td><a href="#">5324</a></td>
+                  <td><a href="#"><input type="button" value="edit"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Anthony D.</a></td>
+                  <td><a href="#">clockIn</a></td> 
+                  <td><a href="#">Mar.10th 2014 09:51</a></td>
+                  <td><a href="#">Active</a></td>
+                  <td><a href="#">8023</a></td>
+                  <td><a href="#"><input type="button" value="edit"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Christopher F.</a></td>
+                  <td><a href="#">clockOut</a></td> 
+                  <td><a href="#">Mar.10th 2014 09:51</a></td>
+                  <td><a href="#">Leave</a></td>
+                  <td><a href="#">3804</a></td>
+                  <td><a href="#"><input type="button" value="edit"></a></td>
+                </tr>
+        </table>
+        </div>
+
+        <div id="bartender" class="roles">
+        <h2>Bartender <a href="#"><input type="button" value="edit"></h2>
+        <br>
+        </a> <input align="right" type="text" value="search">
+
+        <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Activity</th>
+                  <th>Last Clockin</th>
+                  <th>State</th>
+                  <th>PIN</th>
+                  <th>What Else?</th>
+                </tr>
+                <tr>
+                  <td><a href="#">Jennifer J.</a></td>
+                  <td><a href="#">clockIn</a></td> 
+                  <td><a href="#">Mar.10th 2014 09:51</a></td>
+                  <td><a href="#">Active</a></td>
+                  <td><a href="#">5324</a></td>
+                  <td><a href="#"><input type="button" value="edit"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Dorothy S.</a></td>
+                  <td><a href="#">clockIn</a></td> 
+                  <td><a href="#">Mar.10th 2014 09:51</a></td>
+                  <td><a href="#">Active</a></td>
+                  <td><a href="#">8023</a></td>
+                  <td><a href="#"><input type="button" value="edit"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">James W.</a></td>
+                  <td><a href="#">clockOut</a></td> 
+                  <td><a href="#">Mar.10th 2014 09:51</a></td>
+                  <td><a href="#">Leave</a></td>
+                  <td><a href="#">3804</a></td>
+                  <td><a href="#"><input type="button" value="edit"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Nancy L.</a></td>
+                  <td><a href="#">clockIn</a></td> 
+                  <td><a href="#">Mar.10th 2014 09:51</a></td>
+                  <td><a href="#">Active</a></td>
+                  <td><a href="#">5324</a></td>
+                  <td><a href="#"><input type="button" value="edit"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Joseph P.</a></td>
+                  <td><a href="#">clockOut</a></td> 
+                  <td><a href="#">Mar.10th 2014 09:51</a></td>
+                  <td><a href="#">Leave</a></td>
+                  <td><a href="#">3804</a></td>
+                  <td><a href="#"><input type="button" value="edit"></a></td>
+                </tr>
+        </table>
+        </div>
+
+        <div id="delivery" class="roles">
+        <h2>Delivery <a href="#"><input type="button" value="edit"></h2>
+        <br>
+        </a> <input align="right" type="text" value="search">
+
+        <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Activity</th>
+                  <th>Last Clockin</th>
+                  <th>State</th>
+                  <th>PIN</th>
+                  <th>What Else?</th>
+                </tr>
+                <tr>
+                  <td><a href="#">Kenneth B.</a></td>
+                  <td><a href="#">clockIn</a></td> 
+                  <td><a href="#">Mar.10th 2014 09:51</a></td>
+                  <td><a href="#">Active</a></td>
+                  <td><a href="#">5324</a></td>
+                  <td><a href="#"><input type="button" value="edit"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Paul D.</a></td>
+                  <td><a href="#">clockIn</a></td> 
+                  <td><a href="#">Mar.10th 2014 09:51</a></td>
+                  <td><a href="#">Active</a></td>
+                  <td><a href="#">8023</a></td>
+                  <td><a href="#"><input type="button" value="edit"></a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Jason F.</a></td>
+                  <td><a href="#">clockOut</a></td> 
+                  <td><a href="#">Mar.10th 2014 09:51</a></td>
+                  <td><a href="#">Leave</a></td>
+                  <td><a href="#">3804</a></td>
+                  <td><a href="#"><input type="button" value="edit"></a></td>
+                </tr>
+        </table>
+        </div>
+
+        <div id="new" class="roles">
+        <h2>New <input align="right" type="text" value="name"></h2><br>
+        <h2>Default Page <input align="right" type="text" value="menu"></h2><br>
+        <h2>Access Control <input align="right" type="text" value="read/write"></h2><br>
+        <br>
+        
+        </div>
+
+
+
+
+      </div>
+    </section>
+  </div>
+</div>
+
+<footer>
+  <div class="footerlink">
+    <p class="lf">Copyright &copy; 2014 <a href="https://github.com/alexchonglian/AmericanExpressMobile">alexchonglian</a></p>
+    <p class="rf"><a href="#">PosManagerView</a> by <a href="#">Amex Team</a></p>
+    <div style="clear:both;"></div>
+  </div>
+</footer>
+<script type="text/javascript"> Cufon.now(); </script>
+<!-- END PAGE SOURCE -->
+</body>
+</html>
